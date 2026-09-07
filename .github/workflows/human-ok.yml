@@ -1,0 +1,22 @@
+name: human-ok
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: PR number you just reviewed on the web
+        required: true
+permissions:
+  statuses: write
+  pull-requests: read
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha=$(gh api "repos/$GITHUB_REPOSITORY/pulls/${{ inputs.pr }}" -q .head.sha)
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$sha" \
+            -f state=success -f context=human-ok \
+            -f description="reviewed by $GITHUB_ACTOR via Actions"
+          echo "human-ok posted on ${sha:0:12} for PR #${{ inputs.pr }}"
