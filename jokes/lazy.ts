@@ -29,4 +29,5 @@ export default [
   "Yo momma so lazy, she bought a second Alexa just to tell the first Alexa to turn off the bedroom lights.",
   "Yo mama's so lazy, she ordered DoorDash to her table while sitting inside the restaurant.",
   "Ya mama so lazy, she called in sick to her work-from-home job because she couldn't face the commute from the bed to the couch.",
+  "Yo momma so lazy, she doesn't look both ways before crossing the street, she just waits for continental drift to move her to the other side.",
 ];
