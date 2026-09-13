@@ -341,4 +341,5 @@ export default [
   "Yo mama so fat, when she steps on a scale, the screen says 'To Be Continued...'",
   "Your mother is so fat, physicists use her gravity to slingshot satellites into deep space.",
   "Ya mama so big, her portrait has to be saved as a .zip file just to fit on the cloud.",
+  "Yo momma so fat, her memory foam mattress developed amnesia.",
 ];
