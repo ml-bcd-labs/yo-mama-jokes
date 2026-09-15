@@ -342,4 +342,5 @@ export default [
   "Your mother is so fat, physicists use her gravity to slingshot satellites into deep space.",
   "Ya mama so big, her portrait has to be saved as a .zip file just to fit on the cloud.",
   "Yo momma so fat, her memory foam mattress developed amnesia.",
+  "Your mom is so big, when she took a selfie, iCloud automatically sent her an invoice for exceeding her storage limit.",
 ];
