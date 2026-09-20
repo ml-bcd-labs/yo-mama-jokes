@@ -26,4 +26,5 @@ export default [
   "Yer ma's so tall, she went for a swim in the ocean and caused a tsunami warning on three different continents.",
   "Yo mama's so tall, when she tripped over a curb she didn't fall down, she just entered a stable low Earth orbit.",
   "Your mother is so tall, she could stand in the Mariana Trench and still get a sunburn on her shoulders.",
+  "Your mother is so tall, she stood up to stretch and accidentally photobombed the James Webb Space Telescope.",
 ];
