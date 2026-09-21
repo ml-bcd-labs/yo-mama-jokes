@@ -37,4 +37,5 @@ export default [
   "Yo mama so skinny, she used a Cheeto as a yoga bolster and the structural integrity of the snack remained completely uncompromised.",  "Ya mama so skinny, she has to wear her Apple Watch as a belt.",
   "Yo mama's so skinny, she uses a single strand of spaghetti as a pool noodle.",
   "Yo mama so skinny she can hula hoop with a Cheerio.",
+  "Yo mama's so skinny, she can use a single strip of dental floss as a hammock.",
 ];
