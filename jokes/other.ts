@@ -85,4 +85,5 @@ export default [
   "Your momma's credit is so bad, the bank won't even lend her a pen to fill out a credit application.",
   "Yo mama’s so bad with directions, she saw a “Disneyland left” sign on the way to the theme park, so she went home.",
   "Yo mama so unpopular, her spam folder is empty because even the scammers got tired of her texting them back.",
+  "Your mom is so literal, she put a clock in her purse because she wanted to spend some time.",
 ];
