@@ -15,4 +15,5 @@ export default [
   "Yo mama so clumsy, she tripped over a painted line in a grocery store parking lot.",  "Your mother is so clumsy, she fell up the stairs and somehow ended up in the neighbor's basement.",
   "Yo mama so clumsy, she tried to give a casual high-five and accidentally signed a five-year lease on a commercial property.",
   "Yo momma so clumsy, she loses her balance on a treadmill that isn't even plugged in.",
+  "Yo momma so clumsy, she managed to lose a game of Twister while playing completely by herself.",
 ];
