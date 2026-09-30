@@ -28,4 +28,5 @@ export default [
   "Your mother is so tall, she could stand in the Mariana Trench and still get a sunburn on her shoulders.",
   "Your mother is so tall, she stood up to stretch and accidentally photobombed the James Webb Space Telescope.",
   "Yo momma so tall, she doesn't check the weather forecast, she just looks over the horizon to see what tomorrow is doing.",
+  "Yo momma so tall, when she does yoga, her downward dog stretches across three different time zones.",
 ];
