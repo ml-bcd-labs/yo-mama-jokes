@@ -22,9 +22,8 @@ export const CONTACT_EMAIL = "yomamajokescentral.contact@proton.me";
 // Rendered on /legal and in Organization JSON-LD; never re-state these facts as
 // literals in a template.
 //
-// `registeredOffice` is deliberately a sentence, not an address: the registered
-// office is mid-transfer. When the new domiciliation is registered, edit ONLY
-// this block.
+// `registeredOffice` is the registered office as shown on the Kbis.
+// `phone` is the display form; `phoneE164` feeds the tel: link.
 export const LEGAL = {
   legalName: "MICKAEL GOMES CONSULTING",
   legalForm: "a French single-member limited company (EURL)",
@@ -34,7 +33,9 @@ export const LEGAL = {
   registrationNumber: "853 099 414",
   vatIntracom: "FR08 853 099 414",
   registeredOffice:
-    "transfer in progress; this notice will be updated upon registration",
+    "30B Rue du Vieil Abreuvoir, 78100 Saint-Germain-en-Laye, France",
+  phone: "+33 6 60 11 23 49",
+  phoneE164: "+33660112349",
   publicationDirector: "Mickaël Gomes",
   publicationDirectorRole: "managing director",
   email: CONTACT_EMAIL,
