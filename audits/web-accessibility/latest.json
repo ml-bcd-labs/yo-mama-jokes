@@ -2,11 +2,13 @@
   "schema_version": 1,
   "audit": "web-accessibility",
   "site": "yo-mama-jokes",
-  "generated_at": "2026-07-18T00:00:00Z",
+  "generated_at": "2026-10-28T08:42:54Z",
   "target": {
+    "ref": "c1bb78ca8908c8e90f4536caceb89e698d307d2a",
     "url": "https://yomamajokescentral.com"
   },
-  "pages_audited": 10,
+  "pages_audited": 14,
+  "report_path": "audits/web-accessibility/2026-10-28-report.md",
   "checks_run": {
     "axe-violations": 1,
     "keyboard-operable": 1,
@@ -28,21 +30,27 @@
     "descriptive-links": 1,
     "aria-current": 1,
     "framework-a11y-lint": 1,
+    "lighthouse-a11y-100": 1,
     "wcag-checklist-disposition": 1
   },
   "checks_skipped": {
-    "form-labels": "no HTML forms on the site — the contact page uses a mailto: link, not a form",
-    "form-errors-associated": "no HTML forms on the site",
-    "autocomplete-tokens": "no form inputs on the site",
-    "captions": "no video or audio content anywhere on the site",
-    "lighthouse-a11y-100": "Lighthouse's accessibility category is a subset of axe-core; the full axe WCAG 2.2 A-AA suite already passes with 0 violations across all 8 routes + 2 states, so it adds no signal"
+    "form-labels": "No form controls anywhere: 0 input/select/textarea on all 11 audited routes; the contact page is a mailto link, not a form",
+    "form-errors-associated": "No HTML forms on the site, so no validation or error states exist",
+    "autocomplete-tokens": "No form inputs on the site (no personal-data fields)",
+    "captions": "No video or audio content: 0 video/audio/iframe/object/embed elements on the crawled pages"
   },
+  "issues": [
+    {
+      "check_id": "axe-violations",
+      "severity": "serious",
+      "count": 1,
+      "note": "WCAG 1.4.1 Use of Color: inline prose links (main p a) are distinguished from body text by colour only. Link #00e5ff vs body text rgba(244,242,255,.6), composited #9c9aa5, is 1.80:1 (< 3:1); no underline (text-decoration none, border-bottom 0) and no hover/focus underline. axe returned link-in-text-block as incomplete (gradient background); hand-resolved as a failure. Seen on /about, /legal, /contact, /privacy-policy and the category-page Britannica citation."
+    }
+  ],
   "issue_counts": {
     "critical": 0,
-    "serious": 0,
+    "serious": 1,
     "moderate": 0,
     "minor": 0
-  },
-  "issues": [],
-  "report_path": "audits/web-accessibility/2026-07-18-report.md"
+  }
 }
