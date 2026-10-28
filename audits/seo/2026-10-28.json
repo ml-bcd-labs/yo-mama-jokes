@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "audit": "seo",
+  "site": "yo-mama-jokes",
+  "generated_at": "2026-10-28T08:36:30Z",
+  "target": {
+    "ref": "c1bb78ca8908c8e90f4536caceb89e698d307d2a",
+    "url": "https://yomamajokescentral.com"
+  },
+  "pages_audited": 26,
+  "report_path": "audits/seo/2026-10-28-report.md",
+  "checks_run": {
+    "raw-html-content": 1,
+    "robots-txt-valid": 1,
+    "robots-prod-vs-repo": 1,
+    "sitemap-valid": 1,
+    "canonical-present": 1,
+    "canonical-resolves-200": 1,
+    "host-canonicalization": 1,
+    "public-dns-resolution": 1,
+    "indexability-directives": 1,
+    "soft-404-real-status": 1,
+    "lastmod-honest": 1,
+    "title-unique": 1,
+    "title-length": 1,
+    "meta-description-unique": 2,
+    "meta-description-length": 1,
+    "single-h1": 1,
+    "html-lang": 1,
+    "viewport-meta": 1,
+    "hreflang-valid": 1,
+    "schema-valid": 1,
+    "schema-matches-content": 1,
+    "og-image-present": 1,
+    "open-graph-complete": 1,
+    "favicon-icon-set": 1,
+    "manifest-installable": 3,
+    "core-web-vitals": 1,
+    "security-headers": 2,
+    "ai-crawler-access": 1,
+    "publisher-identity-visible": 1,
+    "eeat-identity": 1,
+    "content-spam-guardrails": 1,
+    "orphaned-pages": 1,
+    "click-depth-exceeded": 1
+  },
+  "checks_skipped": {
+    "ads-txt-valid": "ad-free: no ad loader or publisher configured, so no ads.txt is expected",
+    "ad-unit-renders": "ad-free: no ad loader script on any of the 26 crawled pages",
+    "publisher-id-correct": "ad-free: no ad publisher ID anywhere in the HTML",
+    "cmp-consent-footer": "no CMP ships: no ads and no consent-requiring analytics (privacy policy: no ads, no analytics, no tracking cookies)",
+    "consent-mode-region-scoped": "no Consent Mode / GA / ad tags present on any page"
+  },
+  "issues": [
+    {
+      "check_id": "title-length",
+      "severity": "moderate",
+      "count": 1,
+      "note": "17 of 26 titles exceed the ~60-char effective range (61-72): every /jokes/* category page except old and scary, pattern '<Cat> Yo Mama Jokes - <tagline> | Yo Mama Jokes Central', so SERPs truncate the brand suffix. None too short (min 31). Fix: shorten or drop the tagline segment."
+    },
+    {
+      "check_id": "meta-description-length",
+      "severity": "minor",
+      "count": 1,
+      "note": "5 descriptions below ~110 chars (/terms 54, /contact 95, /legal 102, /about 104, /privacy-policy 105) and 13 category descriptions above 160 (161-191, truncated in SERPs). Remaining 8 are 146-160."
+    }
+  ],
+  "issue_counts": {
+    "critical": 0,
+    "serious": 0,
+    "moderate": 1,
+    "minor": 1
+  }
+}
