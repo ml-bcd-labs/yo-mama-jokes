@@ -1,34 +1,21 @@
 {
-  // Cloudflare Workers deploy for the pre-built Astro `dist/`. Static assets are
-  // served at the edge; a thin Worker (worker.js) handles the Telegram webhook
-  // at /api/webhook. Deploy with `npx wrangler deploy` (CI or local).
+  // Cloudflare Workers deploy for the pre-built Astro `dist/` (static assets only).
+  // Deploy with `npx wrangler deploy`.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "yo-mama-jokes",
   "compatibility_date": "2026-07-08",
 
-  // Worker entrypoint for the Telegram webhook. Ported from the retired Vercel
-  // Python function api/webhook.py after the move off Vercel.
-  "main": "./worker.js",
-
   "assets": {
     "directory": "./dist",
-    // Expose the static assets to the Worker so it can defer non-API requests.
-    "binding": "ASSETS",
     // Astro uses `trailingSlash: "never"` — mirror it so `/about/` → `/about`.
     "html_handling": "drop-trailing-slash",
     // Serve dist/404.html with a real HTTP 404 (no soft-404). See MASTER §1/§14.
-    "not_found_handling": "404-page",
-    // Force the Worker to run for /api/* (POST /api/webhook). Without this a
-    // non-asset request would hit not_found_handling (404 page) instead of the
-    // Worker. Everything else is served straight from ./dist as before.
-    "run_worker_first": ["/api/*"]
+    "not_found_handling": "404-page"
   },
 
   // Canonical host = apex. Bind BOTH apex and www to this Worker so both resolve
   // and get certs. www → apex is an edge Redirect Rule (dashboard-only, "Redirect
-  // from WWW to root"). NOTE: this Worker also serves the Telegram webhook at
-  // /api/webhook — re-register that webhook to the APEX URL before adding the
-  // www→apex rule, or Telegram (which won't follow a 301) will break.
+  // from WWW to root").
   "routes": [
     {
       "pattern": "yomamajokescentral.com",
